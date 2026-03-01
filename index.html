@@ -458,41 +458,40 @@ h1{opacity:0;animation:fu .6s ease .15s forwards}
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-// EmailJS — replace these after setup at emailjs.com
 var EJ_KEY = 'YOUR_PUBLIC_KEY';
 var EJ_SVC = 'YOUR_SERVICE_ID';
 var EJ_TPL = 'YOUR_TEMPLATE_ID';
-if (EJ_KEY !== 'YOUR_PUBLIC_KEY') emailjs.init({ publicKey: EJ_KEY });
+if (EJ_KEY !== 'YOUR_PUBLIC_KEY') { emailjs.init({ publicKey: EJ_KEY }); }
 
-// Knowledge base
 var KB = [
-  { p:['skill','tech','stack','python','aws','kubernetes','splunk','apigee','cloud','language','tool','know'],
+  { p:['skill','tech','stack','python','aws','kubernetes','splunk','apigee','cloud','language','tool','know','java','javascript'],
     a:`<b>Varun's Core Skills:</b><br><br>&#9729; <b>Cloud:</b> AWS Lambda, S3, EventBridge, CloudWatch, Kubernetes, Docker, VMware Tanzu<br><br>&#128268; <b>API:</b> Apigee Edge, REST, SOAP, OAuth2, Swagger<br><br>&#128202; <b>Observability:</b> Splunk, ServiceNow ITSM, CloudWatch<br><br>&#128451; <b>Data:</b> Snowflake, MongoDB, PostgreSQL, OracleDB<br><br>&#128187; <b>Code:</b> Python, Java, JavaScript, SQL, PL-SQL, Shell<br><br>&#9881; <b>CI/CD:</b> Jenkins, GitHub Actions, Docker` },
   { p:['experience','work','job','career','role','history'],
-    a:`<b>4+ years across 3 roles:</b><br><br>&#127973; <b>Sr. Systems Engineer</b> @ BCBS Massachusetts (2023&ndash;Present)<br>API/EDI integrations, 99.9% uptime, 1M+ daily API calls, AWS Lambda ETL.<br><br>&#128300; <b>Product Engineer</b> @ J&J MedTech (2022)<br>Enterprise labeling migration, 100% data accuracy, FDA-regulated environment.<br><br>&#127981; <b>Project Engineer</b> @ Sri Andal Paper Mills (2019&ndash;2020)<br>P2P workflows, Lean Six Sigma, Tableau dashboards, +25% inventory accuracy.` },
+    a:`<b>4+ years across 3 roles:</b><br><br>&#127973; <b>Sr. Systems Engineer</b> @ BCBS Massachusetts (2023&ndash;Present)<br>API/EDI integrations, 99.9% uptime, 1M+ daily API calls, AWS Lambda ETL.<br><br>&#128300; <b>Product Engineer</b> @ J&J MedTech (2022)<br>Enterprise labeling migration, 100% data accuracy, FDA-regulated.<br><br>&#127981; <b>Project Engineer</b> @ Sri Andal Paper Mills (2019&ndash;2020)<br>P2P workflows, Lean Six Sigma, Tableau dashboards, +25% inventory accuracy.` },
   { p:['open','available','hire','hiring','opportunity','recruit','employ','looking'],
-    a:`Yes! Varun is <b>actively open to new opportunities</b> &#127775;<br><br><b>Current status:</b> Open while working full-time at BCBS MA<br><br><b>Ideal roles:</b><br>&bull; Senior / Staff Systems or Platform Engineer<br>&bull; SRE / DevOps Engineer<br>&bull; Cloud Infrastructure Engineer<br>&bull; API &amp; Integration Platform Lead<br><br><b>Domains:</b> Healthcare, Fintech, Enterprise SaaS<br><b>Location:</b> Boston, MA &mdash; open to hybrid or remote<br><br>&#9993; contactvarunkumargc@gmail.com` },
+    a:`Yes! I am <b>actively open to work</b> &#127775;<br><br>&#128188; <b>Roles:</b> Systems Engineer / Systems Analyst<br><br>&#127981; <b>Industries:</b> Healthcare, Fintech, Enterprise SaaS<br><br>&#127758; <b>Location:</b> United States &mdash; willing to relocate anywhere within the US<br><br>&#128231; <b>Contact:</b> contactvarunkumargc@gmail.com` },
   { p:['certif','certified','scrum','six sigma','lean','aws cert'],
     a:`<b>4 Professional Certifications:</b><br><br>&#127885; Certified Scrum Master&reg; (CSM)<br>&#9729; AWS Certified Cloud Practitioner<br>&#128208; Six Sigma Green Belt<br>&#128295; Lean Concepts &amp; Application` },
   { p:['education','degree','university','northeastern','master','school','study'],
     a:`&#128218; <b>M.S. Industrial Engineering</b><br>Northeastern University, Boston, MA<br>January 2021 &ndash; December 2022<br><br>Coursework: Project Management, Operational Research, Data Mining, Data Management for Analytics` },
   { p:['contact','email','reach','linkedin','connect','message','touch'],
-    a:`Get in touch with Varun:<br><br>&#9993; <b>contactvarunkumargc@gmail.com</b><br>&#128279; <a href="https://linkedin.com" target="_blank" style="color:#3b82d0">LinkedIn Profile</a><br>&#128205; Boston, Massachusetts<br><br>Or click <b>Contact Me</b> in the top nav!` },
+    a:`Get in touch:<br><br>&#9993; <b>contactvarunkumargc@gmail.com</b><br>&#128279; <a href="https://linkedin.com" target="_blank" style="color:#3b82d0">LinkedIn Profile</a><br>&#128205; Boston, Massachusetts` },
   { p:['bcbs','blue cross','health','healthcare','insurance','massachusetts'],
-    a:`At <b>Blue Cross Blue Shield MA</b>:<br>&bull; Managing 1M+ daily API calls via Apigee Edge<br>&bull; 99.9% platform uptime with 24x7 on-call<br>&bull; Serverless ETL on AWS Lambda &amp; EventBridge<br>&bull; Splunk real-time observability dashboards<br>&bull; HIPAA-compliant IAM and SSL/TLS management` },
+    a:`At <b>Blue Cross Blue Shield MA</b>:<br>&bull; 1M+ daily API calls via Apigee Edge<br>&bull; 99.9% uptime with 24x7 on-call<br>&bull; Serverless ETL on AWS Lambda<br>&bull; Splunk real-time observability<br>&bull; HIPAA-compliant IAM and SSL/TLS` },
   { p:['jj','johnson','medtech','abiomed','fda','label','enabel'],
-    a:`At <b>J&J MedTech (Abiomed)</b>:<br>&bull; Led enterprise labeling migration with 100% accuracy<br>&bull; Deployed EnLabel as technical lead (500+ templates)<br>&bull; Resolved SAP S/4 HANA bottlenecks<br>&bull; Authored SOPs &mdash; cut new-hire ramp-up 30%<br>&bull; Supported FDA &amp; EU MDR compliance audits` },
+    a:`At <b>J&J MedTech (Abiomed)</b>:<br>&bull; Enterprise labeling migration, 100% accuracy<br>&bull; Deployed EnLabel (500+ templates)<br>&bull; Resolved SAP S/4 HANA bottlenecks<br>&bull; SOPs reduced ramp-up by 30%<br>&bull; FDA &amp; EU MDR compliance` },
   { p:['paper','sri andal','lean','sigma','inventory','manufacturing','india','tableau'],
-    a:`At <b>Sri Andal Paper Mills</b>:<br>&bull; Owned full P2P financial workflow<br>&bull; ABC-analysis inventory system &mdash; -10% storage overhead<br>&bull; Tableau dashboards replacing static spreadsheets<br>&bull; Audited 10,000+ records &mdash; +25% accuracy<br>&bull; Lean Six Sigma Muda elimination` },
+    a:`At <b>Sri Andal Paper Mills</b>:<br>&bull; Owned full P2P financial workflow<br>&bull; ABC inventory system &mdash; -10% storage overhead<br>&bull; Tableau dashboards replacing spreadsheets<br>&bull; Audited 10,000+ records &mdash; +25% accuracy<br>&bull; Lean Six Sigma waste elimination` },
   { p:['location','where','based','boston','city'],
-    a:`Varun is based in <b>Boston, Massachusetts</b> &#127961;<br>Open to local Boston roles or fully remote.` },
+    a:`Varun is based in <b>Boston, Massachusetts</b> &#127961;<br>Open to local or fully remote roles.` },
   { p:['hello','hi','hey','morning','afternoon','howdy','sup'],
     a:`&#128075; Hi there! I'm Varun's assistant.<br>Ask me about his <b>skills</b>, <b>experience</b>, <b>certifications</b>, <b>education</b>, or <b>availability</b>.` },
   { p:['who','about','varun','introduce','yourself'],
     a:`<b>Varun Kumar</b> is a Senior Systems Engineer with 4+ years in healthcare &amp; financial platforms.<br><br>Specialties: Cloud-native AWS, API integration, SRE/DevOps, Splunk observability.<br>Based in Boston, MA. M.S. from Northeastern University.` }
 ];
 
-var isOpen = false, greeted = false;
+var isOpen = false;
+var greeted = false;
 var btn  = document.getElementById('ctrig');
 var win  = document.getElementById('cwin');
 var msgs = document.getElementById('cmsg');
@@ -500,7 +499,7 @@ var inp  = document.getElementById('cinp');
 var snd  = document.getElementById('csnd');
 var nd   = document.getElementById('cnd');
 var tst  = document.getElementById('tst');
-var tstxt= document.getElementById('tstxt');
+var tstxt = document.getElementById('tstxt');
 
 btn.addEventListener('click', function() {
   isOpen = !isOpen;
@@ -511,14 +510,16 @@ btn.addEventListener('click', function() {
     greeted = true;
     setTimeout(function() {
       showTyping(function() {
-        addBot(`&#128075; Hi! I'm Varun's assistant.<br>Ask me about his skills, experience, certifications, or availability. Use the quick replies below or type your question!`);
+        addBot(`&#128075; Hi! I'm Varun's assistant.<br>Ask me about his skills, experience, certifications, or availability!`);
       });
     }, 400);
   }
-  if (isOpen) setTimeout(function(){ inp.focus(); }, 300);
+  if (isOpen) { setTimeout(function() { inp.focus(); }, 300); }
 });
 
-inp.addEventListener('keydown', function(e){ if (e.key === 'Enter') doSend(); });
+inp.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') { doSend(); }
+});
 snd.addEventListener('click', doSend);
 
 function askQ(t) {
@@ -527,14 +528,14 @@ function askQ(t) {
     btn.classList.add('on');
     win.classList.add('on');
     nd.classList.remove('show');
-    if (!greeted) greeted = true;
+    if (!greeted) { greeted = true; }
   }
-  setTimeout(function(){ process(t); }, 80);
+  setTimeout(function() { process(t); }, 80);
 }
 
 function doSend() {
   var t = inp.value.trim();
-  if (!t) return;
+  if (!t) { return; }
   inp.value = '';
   process(t);
 }
@@ -543,13 +544,13 @@ function process(text) {
   addUser(text);
   var ans = findAnswer(text);
   if (ans) {
-    showTyping(function(){ addBot(ans); });
+    showTyping(function() { addBot(ans); });
   } else {
-    showTyping(function(){
-      addBot(`Hmm, I don't have a direct answer for that. I've notified Varun &mdash; he'll get back to you soon!`);
+    showTyping(function() {
+      addBot(`Hmm, I don't have a direct answer. I've notified Varun and he'll get back to you soon!`);
       sendEmail(text);
       nd.classList.add('show');
-      showToast('&#128231; Varun has been notified and will reply soon!');
+      showToast('Varun has been notified and will reply soon!');
     });
   }
 }
@@ -558,7 +559,7 @@ function findAnswer(text) {
   var l = text.toLowerCase();
   for (var i = 0; i < KB.length; i++) {
     for (var j = 0; j < KB[i].p.length; j++) {
-      if (l.indexOf(KB[i].p[j]) !== -1) return KB[i].a;
+      if (l.indexOf(KB[i].p[j]) !== -1) { return KB[i].a; }
     }
   }
   return null;
@@ -586,7 +587,7 @@ function showTyping(cb) {
   d.innerHTML = '<div class="mav">VK</div><div class="tdots"><span></span><span></span><span></span></div>';
   msgs.appendChild(d);
   scrollDown();
-  setTimeout(function(){ d.remove(); cb(); }, 800 + Math.random()*500);
+  setTimeout(function() { d.remove(); cb(); }, 800 + Math.random() * 500);
 }
 
 function scrollDown() { msgs.scrollTop = msgs.scrollHeight; }
@@ -594,3 +595,17 @@ function scrollDown() { msgs.scrollTop = msgs.scrollHeight; }
 function esc(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
+
+function showToast(msg) {
+  tstxt.textContent = msg;
+  tst.classList.add('show');
+  setTimeout(function() { tst.classList.remove('show'); }, 4500);
+}
+
+function sendEmail(q) {
+  if (EJ_KEY === 'YOUR_PUBLIC_KEY') { console.log('EmailJS not configured. Question:', q); return; }
+  emailjs.send(EJ_SVC, EJ_TPL, { question: q, time: new Date().toLocaleString() });
+}
+</script>
+</body>
+</html>
